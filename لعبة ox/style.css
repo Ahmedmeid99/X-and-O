@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .content {
+    width: 90%;
+    margin: auto;
+  }
+}
+.header {
+  text-align: center;
+  background: rgb(108, 25, 202);
+  color: white;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.player {
+  /* background-color: #30125e; */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(108, 25, 202);
+}
+.box {
+  font-size: 150px;
+  text-align: center;
+  line-height: 133px;
+  color: white;
+  width: 25%;
+  height: 150px;
+  width: 100%;
+  border: white 2px solid;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  cursor: pointer;
+}
+.box:hover {
+  background-color: black;
+}
+.active {
+  background-color: black;
+}
+.order {
+  background-color: rgb(218, 11, 11);
+}
+.new-game {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000e6;
+  display: block;
+}
+.start {
+  color: white;
+  text-align: center;
+  padding: 13px;
+  background-color: rgb(108, 25, 202);
+  width: 100px;
+  height: 50px;
+  border-radius: 7px;
+  position: absolute;
+  top: 100px;
+  left: 41vw;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  cursor: pointer;
+}
+.start:hover {
+  background-color: red;
+}
